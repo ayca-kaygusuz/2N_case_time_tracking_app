@@ -4,9 +4,10 @@ from database import Database
 class TestDatabase(unittest.TestCase):
     def setUp(self):
         self.db = Database(dbname='attendance_db', user='your_username', password='your_password')
+        # Create a temporary table for testing
+        self.db.execute("CREATE TEMP TABLE test (id SERIAL PRIMARY KEY, name VARCHAR(50));")
 
     def test_execute(self):
-        self.db.execute("CREATE TEMP TABLE test (id SERIAL PRIMARY KEY, name VARCHAR(50));")
         self.db.execute("INSERT INTO test (name) VALUES (%s);", ('Test',))
         result = self.db.fetchone("SELECT * FROM test;")
         self.assertEqual(result[1], 'Test')
