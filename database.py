@@ -1,15 +1,15 @@
 import psycopg2
-from config import DATABASE_CONFIG
+from config import DATABASE_DEFAULT_CONFIG
 
 class Database:
     def __init__(self, dbname = None, user = None, password = None, host = 'localhost', port = '5432'):
         # Use default values from config if not provided
         self.conn = psycopg2.connect(
-            dbname = dbname or DATABASE_CONFIG['dbname'],
-            user = user or DATABASE_CONFIG['user'],
-            password = password or DATABASE_CONFIG['password'],
-            host = host or DATABASE_CONFIG['host'],
-            port = port or DATABASE_CONFIG['port']
+            dbname = dbname or DATABASE_DEFAULT_CONFIG['dbname'],
+            user = user or DATABASE_DEFAULT_CONFIG['user'],
+            password = password or DATABASE_DEFAULT_CONFIG['password'],
+            host = host or DATABASE_DEFAULT_CONFIG['host'],
+            port = port or DATABASE_DEFAULT_CONFIG['port']
         )
 
     def execute(self, query, params = None):

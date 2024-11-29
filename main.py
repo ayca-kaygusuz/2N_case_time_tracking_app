@@ -9,7 +9,7 @@ def main():
     employee_service = EmployeeService(db)
     attendance_service = AttendanceService(db)
 
-    # Example usage
+    # Example usage:
     # employee_service.add_employee("Ali Oz", "2024-01-01")
     # attendance_service.clock_in(1)  # Clock in for employee with ID 1
     # attendance_service.clock_out(1)  # Clock out for employee with ID 1
