@@ -1,3 +1,6 @@
+import config
+config.configure_postgresql_path()
+
 import psycopg2
 from datetime import datetime
 
