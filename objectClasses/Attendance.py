@@ -1,3 +1,5 @@
+# © 2024 Ayça Kaygusuz
+
 class Attendance:
     def __init__(self, id, employee_id, clock_in, clock_out=None, is_late=False):
         self.id = id

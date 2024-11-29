@@ -1,3 +1,5 @@
+# © 2024 Ayça Kaygusuz
+
 from datetime import datetime
 from database import Database
 from objectClasses.Employee import Employee

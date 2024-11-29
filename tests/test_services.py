@@ -1,3 +1,5 @@
+# © 2024 Ayça Kaygusuz
+
 import unittest
 from database import Database
 from services import EmployeeService, AttendanceService

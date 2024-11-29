@@ -1,3 +1,5 @@
+# © 2024 Ayça Kaygusuz
+
 class Employee:
     def __init__(self, id, name, start_date, leave_days=15):
         self.id = id
