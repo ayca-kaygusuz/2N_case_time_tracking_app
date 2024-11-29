@@ -1,5 +1,5 @@
 import config
-config.configure_postgresql_path()
+config.POSTGRESQL_PATH_FINDER()
 
 import psycopg2
 from datetime import datetime
