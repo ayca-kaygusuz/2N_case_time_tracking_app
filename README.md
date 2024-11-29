@@ -62,3 +62,8 @@ The Attendance Tracker is a simple Python application that allows you to manage 
 
 ## License
     This project is copyrighted under GNU GPL v3. For details, please refer to the LICENSE file.
+
+## Contact
+    For questions or feedback, if you already don't have my other personal contact info, you may contact me through LinkedIn, which is linked through my github profile, and also registered with the same name.
+
+    © 2024 Ayça Kaygusuz

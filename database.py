@@ -1,3 +1,5 @@
+# © 2024 Ayça Kaygusuz
+
 import psycopg2
 from config import DATABASE_DEFAULT_CONFIG
 
